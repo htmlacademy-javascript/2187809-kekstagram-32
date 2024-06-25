@@ -5,7 +5,11 @@
 function stringAnalysis(contentString, maxLength){
   return contentString.length <= maxLength;
 }
-/*Выводя в консоль, чтобы отобразилось true или false (больше или меньше параметр contentString и maxLength)*/
-console.log(stringAnalysis('проверяемая строка', 20));
-console.log(stringAnalysis('проверяемая строка', 18));
-console.log(stringAnalysis('проверяемая строка', 10));
+const palindromeTest = (string) => {
+  const standardString = string.replaceAll(' ', '').toLowerCase();
+  let reflectionString = '';
+  for (let i = standardString.length - 1; i >= 0; i--) {
+    reflectionString += standardString[i];
+  }
+  return standardString === reflectionString;
+}
