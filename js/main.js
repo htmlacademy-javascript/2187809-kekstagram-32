@@ -40,16 +40,18 @@ const getNumber = (min, max) => {
 };
 /*Генерация случайного Id*/
 const getRandomId = (min = 0,max = 1000)=>{
-  const idNumber = [];
+  const NumberId = [];
 
   return function (){
+    /*Базовое значение рандомного числа*/
     let randomId = 0;
 
     do {
       randomId = getNumber(min,max);
-    } while (idNumber.includes(randomId));
+    } while (NumberId.includes(randomId));
 
-    idNumber.push(randomId);
+    NumberId.push(randomId);
+    /*Возвращение функции*/
     return randomId;
   };
 };
