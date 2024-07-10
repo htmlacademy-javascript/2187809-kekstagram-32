@@ -44,4 +44,5 @@ const createPhoto = () => ({
     length: getNumber(0, COMMENTS)}, getComment)
 });
 const creatingArray = Array.from({length: MAX_ID }, createPhoto);
+
 export{creatingArray};
