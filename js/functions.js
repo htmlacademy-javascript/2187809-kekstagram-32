@@ -1,4 +1,3 @@
-
 function convertInMinutes (time){
   const [hour, minutes] = time.split(':');
   const minutesInOneHour = 60;
