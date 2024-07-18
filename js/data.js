@@ -1,4 +1,4 @@
-import{getNumber, getRandomId} from './util';
+import{getNumber, getRandomId} from './util.js';
 const AVATAR__NUMBER = 6;
 const PHOTO_ID = 25;
 const PHOTO_LINK = 25;
